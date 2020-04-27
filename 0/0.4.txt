@@ -1,0 +1,17 @@
+title Untitled
+
+note over selain:
+selain lähettää POST-pyynnöllä uuden muistiinpanon tallennettavaksi palvelimelle lähetysnappia painaessa
+end note
+
+selain->palvelin: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note
+palvelin-->selain: HTML-koodi
+selain->palvelin: HTTP GET https://fullstack-exampleapp.herokuapp.com/main.css
+palvelin-->selain: main.css
+selain->palvelin: https://fullstack-exampleapp.herokuapp.com/main.js
+palvelin-->selain: main.js
+selain->palvelin: https://fullstack-exampleapp.herokuapp.com/data.json
+palvelin-->selain: data.json
+
+note over selain:
+selain parsii päivittyneen json-sisällön ruudulle
